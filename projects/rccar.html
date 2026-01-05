@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RC Car</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="../sources/styles.css" rel="stylesheet">
+        <script src="../sources/website.js"></script>
+    </head>
+    <body>
+        <ul class="taskbar fixed-top">
+            <li><a href="../index.html" class="active">Robert Clukey</a></li>
+            <li style="float:right"><a href="../resume.html">Resume</a></li>
+            <li style="float:right"><a href="../projects.html">Projects</a></li>
+        </ul>
+
+        <div class="padding-20" style="text-align: center;">
+            <h1 class="text-align-center" style="padding-bottom: 30px;"><strong><u>Remotely Operated Car</u></strong></h1>
+            <img src="../files/Joystick-Testing.jpg" alt="Initial Electronics Testing of the RC Car Controls" width="450">
+            <p class="text-align-center" style="font-size: 14px;">The initial electronics testing of the RC car control system.</p><br>
+            <p class="text-align-center">
+                Using an Arduino MEGA 2560, I coded the system to take as input the position of the<br>
+                joystick to spin the motor for the drivetrain and rotate the servo to steer the car.<br>
+                The servo motor was later replaced with a stepper motor to finely control the angle<br>
+                of the front wheels. The car is designed for rear-wheel drive with each wheel receiving<br>
+                the same power, regardless of the orientation of the front-wheel steering. This causes<br>
+                some slipping in the model. This was later fixed in the final version.
+            </p><br><br>
+            <img src="../files/rc-car-cad.png" alt="Remote Controlled Car CAD Model" width="450">
+            <p class="text-align-center" style="font-size: 14px;">The CAD model for the remotely operated car.</p><br>
+            <p class="text-align-center">
+                I recently designed and fabricated a fully custom remote-controlled car,<br>
+                integrating mechanical design, electronics, and embedded programming.<br>
+                I developed the control system using an Arduino microcontroller and created<br>
+                the mechanical structure in CAD. SolidWorks allowed me to model the assembly<br>
+                and run simulations to evaluate performance under various loading conditions.
+            </p><br><br>
+            <p class="text-align-center">
+                To bring the design to life, I sourced components through 3D printing, McMaster-Carr,<br>
+                and SendCutSend, ensuring each part met the functional requirements of the system.<br>
+                Using the Arduino IDE, I programmed the vehicle in C++ to operate via joystick<br>
+                input and added a cruise control feature that maintained a constant speed and<br>
+                direction without manual adjustment. This project strengthened my skills in<br>
+                mechanical design, embedded systems, and power management, and it now serves as<br>
+                the foundation for my next goal: developing my own electric skateboard.
+            </p><br><br>
+        </div>
+
+        <div style="padding-top: 50px;">
+            <div style="background-color: lightgrey;">
+                <div class="container" style="padding: 30px; padding-bottom: 50px;">
+                    <div class="row align-items-center">
+                        <div class="col text-align-center">
+                            <a target="_blank" href="mailto:bobby@clukey.org">bobby@clukey.org</a>
+                        </div>
+                        <div class="col text-align-center">
+                            <a target="_blank" href="https://github.com/RClukey">GitHub</a>
+                        </div>
+                        <div class="col text-align-center">
+                            <a target="_blank" href="https://www.linkedin.com/in/robert-clukey/">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
