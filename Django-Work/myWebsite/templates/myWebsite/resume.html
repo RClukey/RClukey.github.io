@@ -1,0 +1,164 @@
+{% extends "myWebsite/layout.html" %}
+
+{% block main %}
+
+    <header class="text-align-center padding-20 font-50" style="background-color: #42000e; color: #ffffff;"><strong>ROBERT CLUKEY</strong></header>
+
+    <div class="padding-20 text-align-center" style="font-size: 40px;">
+        <a target="_blank" href="{% url 'PDFviewer' viewer='resume' %}">View my resume</a><br>
+        <a target="_blank" href="{% url 'PDFviewer' viewer='transcript' %}">View my transcript</a><br>
+    </div>
+    
+    <div style="padding-left:60px; padding-right:60px; padding-top: 30px;">
+        <h4 style="padding-top: 20px; padding-bottom: 20px;" class="text-align-center">Engineering undergraduate seeking an entry-level, full-time position that focuses on robotics, circuitry, and CAD.</h4>
+        <h1>Education</h1>
+        <h4>Texas A&M University</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                <strong style="font-size:20px;">Expected Graduation: May 2025<br>GPA: 4.0<br>Dean's Honor Roll</strong><br><br>
+                <p style="font-size:18px;">Bachelors of Science in Interdisciplinary Engineering with a focus in Robotics Engineering</p>
+                <p style="font-size:18px;">Minor in Electrical Engineering</p>
+                &emsp;&emsp;&emsp;&emsp;Electric Circuit Theory<br>
+                &emsp;&emsp;&emsp;&emsp;Introduction to Digital System Design<br>
+                &emsp;&emsp;&emsp;&emsp;Random Signals and Systems<br>
+                &emsp;&emsp;&emsp;&emsp;Signals and Systems<br>
+                &emsp;&emsp;&emsp;&emsp;Electronics<br>
+            </div>
+            <h4 style="padding-top: 50px;">Harvard University</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Introduction to Artificial Intelligence Using Python Certificate<br>
+                &emsp;&emsp; <strong>Received: September 2022</strong><br>
+                &emsp;&emsp; Neural Networks and Machine Learning through TensorFlow<br><br>
+                Web Development Using Python and JavaScript Certificate<br>
+                &emsp;&emsp; <strong>Received: September 2023</strong><br>
+                &emsp;&emsp; Creation of websites and applications using Django and JavaScript<br>
+            </div>
+            <br><br>
+
+
+        <h1>Skills</h1>
+        <div style="padding-left: 200px; padding-right: 200px; padding-top: 10px;">
+            <div class="row">
+                <div class="col text-align-center" style="border:solid black 4px;">
+                    Programming Languages
+                </div>
+                <div class="col text-align-center" style="border-top:solid black 4px; border-bottom:solid black 4px; border-right:solid black 4px;">
+                    CAD Software
+                </div>
+                <div class="col text-align-center" style="border-top:solid black 4px; border-bottom:solid black 4px; border-right:solid black 4px;">
+                    Circuit/Simulation Design
+                </div>
+                <div class="col text-align-center" style="border-top:solid black 4px; border-bottom:solid black 4px; border-right:solid black 4px;">
+                    Miscellaneous
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 200px; padding-right: 200px;">
+            <div class="row">
+                <div class="col text-align-center" style="border-left:solid black 2px; border-bottom:solid black 2px; padding-top: 20px; padding-bottom: 20px;">
+                    Python<br>
+                    C/C++<br>
+                    Verilog<br>
+                    HTML/CSS<br>
+                    MATLAB<br>
+                    LaTeX<br>
+                    SQL<br>
+                    JavaScript<br>
+                    Java<br>
+                </div>
+                <div class="col text-align-center" style="border-left:solid black 2px; border-bottom:solid black 2px; padding-top: 20px; padding-bottom: 20px;">
+                    SolidWorks<br>
+                    Autodesk Fusion 360<br>
+                    Autodesk Inventor<br>
+                    Blender<br>
+                </div>
+                <div class="col text-align-center" style="border-left:solid black 2px; border-bottom:solid black 2px; padding-top: 20px; padding-bottom: 20px;">
+                    Multisim<br>
+                    ROS<br>
+                    LT Spice<br>
+                    SimuLink<br>
+                    NI LabView<br>
+                </div>
+                <div class="col text-align-center" style="border-left:solid black 2px; border-bottom:solid black 2px; border-right:solid black 2px; padding-top: 20px; padding-bottom: 20px;">
+                    Microsoft Office Products<br>
+                    DaVinci Resolve<br>
+                    Unreal Engine 5<br>
+                    Wireshark<br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <h1>Experience</h1>
+        <h4>ASAP Stone and Landscape Supply</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Worked with clients to build relations and give them a good experience at ASAP.<br>
+                Was instrumental in closing several multi-thousand-dollar sales.<br>
+            </div>
+        <br><br>
+
+        <h1>Projects</h1>
+        <h4>Subsea ROV (Senior Capstone)</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Developed chassis and propulsion systems for a next-generation subsea remotely operated vehicle (ROV) that is smaller, more maneuverable, and cheaper than current subsea ROVs.<br>
+                &emsp;&emsp;&emsp;&emsp;Designed way for ROV to have movement in all six degrees of freedom while using only four thrusters.<br>
+                &emsp;&emsp;&emsp;&emsp;Designed to allow for 360-degree field of view and modularity and scalability.<br>
+            </div>
+        <h4 style="padding-top: 20px;">Vending Machine</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Designed, fabricated, and tested the code, electronics, and hardware to control a vending machine.<br>
+                &emsp;&emsp;&emsp;&emsp;Design included servo motors, an IR sensor, and an Arduino Mega, all communicating using I2C.<br>
+            </div>
+        <h4 style="padding-top: 20px;">Electric Skateboard</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Designed in SolidWorks and programmed using an Arduino Mega and Arduino Mini.<br>
+                I plan to add:<br>
+                <ul>
+                    <li>Hand-Held Remote Control to Control the Skateboard's Speed and Direction Through Radio Frequencies</li>
+                    <li>Cruise Control</li>
+                    <li>Battery Life and Speed Digital Display</li>
+                    <li>Rechargable By Walking</li>
+                </ul>
+            </div>
+        <h4>Professional Website</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">Built using Python, HTML, CSS, and JavaScript without templates or artificial intelligence such as ChatGPT or Microsoft Copilot.</div>
+        <br><br>
+
+        <h1>Activities</h1>
+        <h4>Kung-Fu</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Began in 2009, and still participating in today. Fourth-degree black belt.<br>
+                Multiple first-place trophies and two grand champion trophies.<br>
+                Instructed students in exercises, strength training, and sparring.<br>
+            </div><br>
+        <h4>Interdisciplinary Engineering Association (IDEA)</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Joined in 2022, and am currently the treasurer of.<br>
+                Advised Freshmen about Interdisciplinary Engineering and what discipline entails.<br>
+                Managed budget and spoke with companies about sponsorship opportunities.<br>
+            </div><br>
+        <h4>Phantom Invents</h4>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Weeklong workshop with a mixture of students and members of the military to solve problems in the military.<br>
+                &emsp;&emsp;&emsp;&emsp;Designed, prototyped, and presented solutions to various stakeholders and military personnel.<br><br>
+                June 2023 project: Improved command post structure to minimize set up and tear down time.<br>
+                May 2024 project: Create multilayered defense system against drone warfare as seen in Russo-Ukrainian War.<br>
+            </div><br><br>
+    
+        <h1>Langauges</h1>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                English (Fluent)<br>
+                Italian (Intermediate)<br>
+                Spanish (Intermediate)<br>
+                Swedish (Intermediate)<br>
+            </div><br><br>
+        
+        <h1>Hobbies</h1>
+            <div style="padding-left: 50px; padding-right: 50px;">
+                Saxophone<br>
+                Guitar<br>
+                Rock climbing<br>
+                Learning languages<br>
+            </div>
+    </div><br><br>
+
+{% endblock %}
