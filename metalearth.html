@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Robert Clukey</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="sources/styles.css" rel="stylesheet">
+        <script src="sources/website.js"></script>
+    </head>
+    <body>
+        <div style="color:blue">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Robert Clukey</a>
+                
+                <div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="youtube.html">Youtube Channel</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    {% for me in metalearths %}
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{{ me.main_pic.link }}" class="img-fluid rounded-start" alt="{{ me.main_pic.alt }}">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="{% url 'sculpture' name=me.name %}">{{ me.name }}</a></h5>
+                                        <p class="card-text">{{ me.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% empty %}
+                        <h3>{{ sculp.name }}</h3>
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                {% for pic in sculp.picture %}
+                                    <div class="carousel-item active">
+                                        <img src="{{ pic.link }}" class="d-block w-100" alt="{{ pic.alt }}">
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div>{{ sculp.description }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div style="padding-top: 50px;">
+            <div style="background-color: lightgrey;">
+                <div class="container" style="padding: 30px; padding-bottom: 50px;">
+                    <div class="row align-items-center">
+                        <div class="col text-align-center">
+                            <a target="_blank" href="mailto:rclukey@tamu.edu">rclukey@tamu.edu</a>
+                        </div>
+                        <div class="col text-align-center">
+                            <a target="_blank" href="https://github.com/rdc890444">GitHub</a>
+                        </div>
+                        <div class="col text-align-center">
+                            <a target="_blank" href="https://www.linkedin.com/in/robert-clukey/">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
